@@ -1,24 +1,24 @@
 <section class="seccion-carrusel">
-    <div class="container d-flex flex-column justify-content-center align-items-center">
-        <h2>¡Una historia de amor como la de ellos!</h2>
-        <p class="text-center">Conoce las historias DE estos peluditos que encontraron una familia <br>e intercambiaron
-            mucho amor y diversión</p>
-    </div>
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <h2>¡Una historia de amor como la de ellos!</h2>
+    <p class="text-center">Conoce las historias DE estos peluditos que encontraron una familia <br>e intercambiaron
+      mucho amor y diversión</p>
+  </div>
 
-    <p-carousel [value]="testimonios">
+  <p-carousel [value]="testimonios">
     <ng-template let-testimonio pTemplate="item">
-        <div class="product-item">
-            <div class="product-item-content">
-                <div class="p-mb-3"></div>
-                <div>
-                    <img class="img-carrusel" [src]="testimonio.imagen" [alt]="testimonio.nombre">
-                    <h4 class="p-mb-1">
-                        {{ testimonio.nombre }}
-                    </h4>
-                </div>
-            </div>
+      <div class="product-item">
+        <div class="product-item-content">
+          <div class="p-mb-3"></div>
+          <div>
+            <img class="img-carrusel" [src]="testimonio.imagen" [alt]="testimonio.nombre">
+            <h4 class="p-mb-1">
+              {{ testimonio.nombre }}
+            </h4>
+          </div>
         </div>
+      </div>
     </ng-template>
-</p-carousel>
+  </p-carousel>
 
 </section>

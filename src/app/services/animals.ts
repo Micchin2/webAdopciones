@@ -7,13 +7,17 @@ import { Animales } from '../interfaces/animales.interface';
   providedIn: 'root'
 })
 export class Animals {
-  
+
   apiRL = 'https://huachitos.cl/api/';
 
   constructor(private http: HttpClient){}
 
   getAnimales():Observable<Animales> {
     return this.http.get<Animales>(this.apiRL + 'animales');
+  }
+
+  getAnimalID(id:string){
+    return this.http.get(this.apiRL + 'animal/'+id);
   }
 
 }

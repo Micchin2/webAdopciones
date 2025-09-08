@@ -35,7 +35,7 @@
 @media screen and (max-width: 991px) {
     .section-card {
     height: 530px;
-    width: 350px;
+    width: 310px;
     margin: 0 auto; /* Esto centra horizontalmente */
     display: flex;
     align-content: center;
@@ -43,4 +43,5 @@
   .container{
     margin-left: 20px;
   }
+
 }

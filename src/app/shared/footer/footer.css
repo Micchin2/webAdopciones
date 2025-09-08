@@ -1,0 +1,22 @@
+.footer-seccion{
+  background-color: #f3f2f2;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+.title-logo{
+  font-weight: 500;
+  color: #009970;
+  font-size: 34px;
+  transition: 0.3s color;
+}
+
+.title-derechos{
+  font-size: 0.8125em;
+}
+
+.cont-iconos a i {
+  font-size: 30px;
+  color: #444;
+  margin: 15px;
+}

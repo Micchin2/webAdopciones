@@ -14,7 +14,7 @@ import { PaginatorModule, PaginatorState } from 'primeng/paginator';
 export class AdoptarAnimal implements OnInit{
 
   animales: any[] = [];
-  animalesPagina: any[] = []; 
+  animalesPagina: any[] = [];
   total: number = 0 ;
 
   constructor(private service: Animals){}
@@ -22,7 +22,7 @@ export class AdoptarAnimal implements OnInit{
 
   ngOnInit(): void {
     this.service.getAnimales().subscribe( ani => {
-      this.animales = ani.data;;
+      this.animales = ani.data;
       console.log(this.animales)
       this.total = this.animales.length;
       this.actualizarPagina(0, 9);
@@ -40,5 +40,5 @@ export class AdoptarAnimal implements OnInit{
     const fin = inicio + tamaño;
     this.animalesPagina = this.animales.slice(inicio, fin);
   }
- 
+
 }

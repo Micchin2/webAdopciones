@@ -4,11 +4,11 @@
         <div class="row">
             <div class="col col-md-4" *ngFor="let animal of animalesPagina">
                 <app-card-animal [nombre]="animal.nombre" [foto]="animal.imagen" [edad]="animal.edad"
-                    [genero]="animal.genero" class="m-5">
+                    [genero]="animal.genero" [id]="animal.id" class="m-5">
                 </app-card-animal>
             </div>
         </div>
-        <div class="card flex justify-center">
+        <div class="card flex justify-center mb-4">
             <p-paginator [rows]="9" [totalRecords]="total"
                 (onPageChange)="cambiarPagina($event)">
             </p-paginator>

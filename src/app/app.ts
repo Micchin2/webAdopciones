@@ -1,13 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Nav } from "./shared/nav/nav";
-import { Home } from "./pages/home/home";
-import { Carrusel } from "./sections/carrusel/carrusel";
-import { AdoptarAnimal } from "./sections/adoptar-animal/adoptar-animal";
+import { Footer } from "./shared/footer/footer";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Nav, Home, Carrusel, AdoptarAnimal],
+  imports: [RouterOutlet, Nav,Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

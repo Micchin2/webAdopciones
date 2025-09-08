@@ -10,7 +10,7 @@
         </p>
         <p class="subtitle-card">Edad: {{edad | titlecase}}</p>
     </div>
-    <a href="" class="a-card">
+    <a [routerLink]="['/details', id]" class="a-card">
         <div class="d-flex justify-content-center m-4">
             <button class="btn btn-dark btn-card">Adoptame aqui</button>
         </div>
