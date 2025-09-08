@@ -1,0 +1,46 @@
+.section-card{
+    border-style: solid;
+    border-width: 5px 0px 0px 0px;
+    border-color: #009970;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
+}
+
+.img-card{
+    width: 260px;
+    height: 280px;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.title-card{
+    color: #624E54;
+    font-size: 24px;
+}
+
+.subtitle-card{
+    font-size: 18px;
+}
+
+.a-card{
+    text-decoration: none;
+}
+
+.btn-card{
+    background-color: #009970;
+}
+
+.container{
+    margin-left: 80px;
+  }
+
+@media screen and (max-width: 991px) {
+    .section-card {
+    height: 530px;
+    width: 350px;
+    margin: 0 auto; /* Esto centra horizontalmente */
+    display: flex;
+    align-content: center;
+  }
+  .container{
+    margin-left: 20px;
+  }
+}

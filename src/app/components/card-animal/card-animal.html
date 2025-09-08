@@ -1,0 +1,18 @@
+<p-card class="section-card">
+    <div class="d-flex justify-content-center">
+        <img alt="Card" class="img-card mt-4" [src]="foto" />
+    </div>
+    <h2 class="title-card fw-bold text-center mt-3">{{nombre | titlecase}}</h2>
+    <div class="container">
+        <p class="subtitle-card">
+            <i class="bi bi-puzzle-fill"></i>
+            {{genero | titlecase}}
+        </p>
+        <p class="subtitle-card">Edad: {{edad | titlecase}}</p>
+    </div>
+    <a href="" class="a-card">
+        <div class="d-flex justify-content-center m-4">
+            <button class="btn btn-dark btn-card">Adoptame aqui</button>
+        </div>
+    </a>
+</p-card>

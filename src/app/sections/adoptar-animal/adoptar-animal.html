@@ -1,0 +1,17 @@
+<section class="adopccion-seccion">
+    <h2 class="title-adopcion">¡Dale clic al nombre de tu futura mascota!</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-4" *ngFor="let animal of animalesPagina">
+                <app-card-animal [nombre]="animal.nombre" [foto]="animal.imagen" [edad]="animal.edad"
+                    [genero]="animal.genero" class="m-5">
+                </app-card-animal>
+            </div>
+        </div>
+        <div class="card flex justify-center">
+            <p-paginator [rows]="9" [totalRecords]="total"
+                (onPageChange)="cambiarPagina($event)">
+            </p-paginator>
+        </div>
+    </div>
+</section>

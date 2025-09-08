@@ -1,0 +1,125 @@
+.title-adopcion{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.24em;
+    letter-spacing: -1px;
+    color: #009970;
+    text-align: center;
+}
+/* Contenedor del paginator */
+::ng-deep .p-paginator {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  user-select: none;
+  flex-wrap: wrap; /* Para que no se corte en pantallas pequeñas */
+}
+
+/* Contenedor de los números de página */
+::ng-deep .p-paginator .p-paginator-pages {
+  display: flex !important;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Botones de páginas */
+::ng-deep .p-paginator .p-paginator-page {
+  min-width: 36px;
+  height: 36px;
+  line-height: 34px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  background-color: #f9f9f9;
+  color: #444;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+::ng-deep .p-paginator .p-paginator-page:hover {
+  background-color: #e6f0ff;
+  border-color: #0056d2;
+  color: #0056d2;
+}
+
+/* Página seleccionada */
+::ng-deep .p-paginator .p-paginator-page.p-highlight {
+  background-color: #0056d2;
+  border-color: #0056d2;
+  color: white;
+}
+
+/* Botones de navegación (prev, next, first, last) */
+::ng-deep .p-paginator .p-paginator-first,
+::ng-deep .p-paginator .p-paginator-prev,
+::ng-deep .p-paginator .p-paginator-next,
+::ng-deep .p-paginator .p-paginator-last {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 34px;
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+::ng-deep .p-paginator .p-paginator-first:hover,
+::ng-deep .p-paginator .p-paginator-prev:hover,
+::ng-deep .p-paginator .p-paginator-next:hover,
+::ng-deep .p-paginator .p-paginator-last:hover {
+  background-color: #dbe9ff;
+  color: #003a8c;
+}
+
+/* Selector filas por página */
+::ng-deep .p-paginator .p-paginator-rpp-options {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Estilo para el dropdown interno */
+::ng-deep .p-paginator .p-dropdown {
+  min-width: 60px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Ajustar el texto del label */
+::ng-deep .p-paginator .p-paginator-rpp-options > span {
+  user-select: none;
+}
+
+/* Ajuste para íconos si se usan */
+::ng-deep .p-paginator .p-paginator-prev-icon,
+::ng-deep .p-paginator .p-paginator-next-icon,
+::ng-deep .p-paginator .p-paginator-first-icon,
+::ng-deep .p-paginator .p-paginator-last-icon {
+  font-size: 18px;
+}
+
+
+
+
+@media screen and (max-width: 991px){
+    .title-adopcion{
+        font-size: 40px;
+    }
+}

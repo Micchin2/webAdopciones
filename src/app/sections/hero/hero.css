@@ -1,0 +1,62 @@
+.seccion-hero{
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
+.cont{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-banner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0.5;
+}
+
+.contenido{
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    top: 40%;
+}
+
+
+.hero-title{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero-description{
+    padding: 10px 300px 0px 300px;
+}
+
+/*RESPONSIVO*/
+
+@media screen and (max-width: 991px) {
+    .contenido{
+        top: 30%;
+    }
+    .hero-title{
+        font-size: 2rem;
+    }
+    .hero-description{
+        padding: 10px 10px 0px 10px;
+        text-align: center;
+    }
+}
